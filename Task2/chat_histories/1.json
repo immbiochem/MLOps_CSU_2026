@@ -1,0 +1,277 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Меня зовут Семён",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Привет, Семён! Чем могу помочь?",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 120,
+          "prompt_tokens": 41,
+          "total_tokens": 161,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 21,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-N63OpcdqjYzbbAMiNC0GuvmwTPf88XY6",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a16816-02a9-7166-8dda-53192cecfff2-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 41,
+        "output_tokens": 120,
+        "total_tokens": 161,
+        "input_token_details": {
+          "cache_read": 21
+        },
+        "output_token_details": {}
+      }
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "Я биоинформатик, занимаюсь анализом данных транскриптомного секвенирования, ML и статистиков в медицине и биологии",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Отлично, Семён. Работа с транскриптомиком, ML и статистикой в медицине — ключевой современный подход. Чем могу быть полезен?",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 294,
+          "prompt_tokens": 106,
+          "total_tokens": 400,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 36,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-zk3aSXUTsT3NxrFSG0rVabEc8gxFMu3l",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a16816-a031-7236-b9e2-2b1ed62fe39c-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 106,
+        "output_tokens": 294,
+        "total_tokens": 400,
+        "input_token_details": {
+          "cache_read": 36
+        },
+        "output_token_details": {}
+      }
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "Какие основные шаги в анализе данных транскриптомики ты знаешь?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Основные шаги анализа данных транскриптомики:\n\n1. **Сбор и подготовка данных** — эксперименты (RNA-seq, microarrays), калибровка, фильтрация генов (по выразительности, стабильности, каверсности).\n\n2. **Квантификация** — нормализация (TPM, FPKM, DESeq2), выделение гены-трафиков (DEGs).\n\n3. **Статистический анализ** — тесты различий (t-test, ANOVA, limma), корреляционные модели, регрессия для контроля факторов.\n\n4. **Машинное обучение** — классификация (random forest, SVM), регрессия, упрощение (LASSO), кластеризация (k-means, hierarchical).\n\n5. **Глубокое обучение** — нейросети для предсказания регуляции, классификации мутаций, ген-сет-анализ.\n\n6. **Визуализация и интерпретация** — heatmap, PCA, t-SNE, GSEA, визуализация ген-трафика.",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 521,
+          "prompt_tokens": 185,
+          "total_tokens": 706,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 101,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-YkVg7yDdW6wnjjsJMnNX2YCAEjzP8MrJ",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a16817-4b90-75f0-b140-f682bb4764c3-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 185,
+        "output_tokens": 521,
+        "total_tokens": 706,
+        "input_token_details": {
+          "cache_read": 101
+        },
+        "output_token_details": {}
+      }
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "Привет, помнишь, как меня зовут?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Да, помню, Семён. Чем могу помочь?",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 105,
+          "prompt_tokens": 489,
+          "total_tokens": 594,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 101,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-DXUmEGtKb7k4zPeE0aPwtQNxLv820ZlI",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a16819-ccbf-7488-aa9a-7135b7a9d4e2-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 489,
+        "output_tokens": 105,
+        "total_tokens": 594,
+        "input_token_details": {
+          "cache_read": 101
+        },
+        "output_token_details": {}
+      }
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "Что я изучаю?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Ты изучаешь **транскриптомный анализ (транскриптомику)** в контексте медицины и биологии, с акцентом на:\n- **Джетсоновы методы** (DESeq2, edgeR для транскриптом-квантификации),\n- **Корреляционные/регрессионные модели** для выявления факторов, влияющих на экспрессию генов,\n- **Машинное обучение** (классификация ДЕГ, регуляторные сети, кластеризация).\nРабота с **RNA-seq/микросеквенированием** и интерпретация ген-трафика.\n\nГотов углубиться в какой-то конкретный метод или задачу?",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 457,
+          "prompt_tokens": 523,
+          "total_tokens": 980,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 484,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-LZXM4CKcfJDSSnoH7O5CHhDW23PGUQPx",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1681a-0282-734b-b783-e5de87241b09-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 523,
+        "output_tokens": 457,
+        "total_tokens": 980,
+        "input_token_details": {
+          "cache_read": 484
+        },
+        "output_token_details": {}
+      }
+    }
+  }
+]

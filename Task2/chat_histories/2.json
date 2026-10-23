@@ -1,0 +1,222 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "Привет, я Кирилл, врач-исследователь",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Привет, Кирилл. Рад познакомиться. Чем могу помочь в твоей работе?",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 74,
+          "prompt_tokens": 48,
+          "total_tokens": 122,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 21,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-LNhcM6SF1SCBx1frGl1IVg9L0VXmh15E",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a16818-4723-765f-91aa-7f0fb48e1970-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 48,
+        "output_tokens": 74,
+        "total_tokens": 122,
+        "input_token_details": {
+          "cache_read": 21
+        },
+        "output_token_details": {}
+      }
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "Я занимаюсь исследованиями в кардиологии",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Отлично, Кирилл. Кардиология — это важная область для исследований, особенно в контексте молекулярной биологии, генетики и инженерии. Расскажи, с чем ты работаешь? Может быть, анализ данных с УЗИ, генетических маркеров, поведенческих исследований или что-то связанное с клиническимиTrial?",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 294,
+          "prompt_tokens": 96,
+          "total_tokens": 390,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 43,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-QUiEynYJeA3auJ1u8t5QqjkBGf9NWS4i",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a16818-a85e-7541-a2c8-cbc1548c0296-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 96,
+        "output_tokens": 294,
+        "total_tokens": 390,
+        "input_token_details": {
+          "cache_read": 43
+        },
+        "output_token_details": {}
+      }
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "Как рассчитать объем выборки для регрессии Пуассона?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Для расчёта объёма выборки в регрессии Пуассона (анализ частотных данных) используется формула для двумерной таблицы с двумя группами:\n\n\\[\nn = \\frac{(Z_{\\alpha/2} + Z_{\\beta})^2 \\cdot [p(1-p) + (p_1 - p_0)^2]}{d^2}\n\\]\n\nгде  \n- \\(p\\) — ожидаемая вероятность положительного результата,  \n- \\(p_1, p_0\\) — ожидаемые частоты в группах (или вероятности),  \n- \\(d\\) — ожидаемый эффект (разница \\(p_1 - p_0\\)),  \n- \\(Z_{\\alpha/2}\\) — критическое значение для \\(\\alpha\\) (обычно 1.96 для \\(\\alpha=0.05\\)),  \n- \\(Z_{\\beta}\\) — критическое значение для мощности \\(1-\\beta\\) (например, 0.84 при \\(\\beta=0.2\\)).\n\n**Пример**:  \nЕсли \\(p=0.5\\), \\(p_1=0.7\\), \\(p_0=0.3\\), \\(\\alpha=0.05\\), \\(\\beta=0.2\\), \\(d=0.4\\):  \n\\[\nn = \\frac{(1.96+0.84)^2 \\cdot [0.5\\times0.5 + (0.7-0.3)^2]}{0.4^2} = \\frac{7.84 \\cdot [0.25 + 0.16]}{0.16} = \\frac{7.84 \\cdot 0.41}{0.16} \\approx 20.2\n\\]  \nОкругляем до 21.\n\nДля сложных случаев (много групп, нелинейные зависимости) используют модели на основе максимальной правдоподобия или адаптации метода Крюгера.\n\nЕсли вам нужен именно для оценки коэффициента регрессии Пуассона (а не для теста связи), объём выборки не расчёзывается — он определяется мощностью и точностью.",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 1226,
+          "prompt_tokens": 225,
+          "total_tokens": 1451,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 91,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-v7q16Uh2hkUQFsmaMIeX1wFNNoMI5P45",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a16819-0383-7649-a99b-83c73c2a1128-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 225,
+        "output_tokens": 1226,
+        "total_tokens": 1451,
+        "input_token_details": {
+          "cache_read": 91
+        },
+        "output_token_details": {}
+      }
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "Привет, напомни, что я спрашивал у тебя в последний раз?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "Да, я помню. Ты спрашивал про расчёт объёма выборки для регрессии Пуассона.",
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 354,
+          "prompt_tokens": 788,
+          "total_tokens": 1142,
+          "completion_tokens_details": null,
+          "prompt_tokens_details": {
+            "audio_tokens": null,
+            "cache_write_tokens": null,
+            "cached_tokens": 43,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "model_provider": "openai",
+        "model_name": "./models/maple-preview-TQ1_0-head-Q4_K.gguf",
+        "system_fingerprint": "b11342-f1cee9941",
+        "id": "chatcmpl-tYIOg7Ay6OYPw6cMNWa3yo9qtQlJuFtf",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "type": "ai",
+      "name": null,
+      "id": "lc_run--01a1681a-c7b0-778b-ae5f-bd839534d096-0",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 788,
+        "output_tokens": 354,
+        "total_tokens": 1142,
+        "input_token_details": {
+          "cache_read": 43
+        },
+        "output_token_details": {}
+      }
+    }
+  }
+]
